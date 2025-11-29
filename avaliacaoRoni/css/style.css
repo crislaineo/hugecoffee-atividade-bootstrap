@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../comp/fonts/Poppins-Regular.ttf');
+}
+
+body {
+  background-color: #f5f3ef;
+  font-family: 'Poppins';
+}
+
+/* Navba boot */
+.nav-link {
+  color: black;
+  font-weight: 400;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #cf915d;
+}
+
+.hero {
+  padding: 80px 0;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin: 18px 0;
+}
+
+.hero-img {
+  max-width: 50%;
+  border-radius: 16px;
+  transition: 0.6s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.btn-custom {
+  background-color: #392420;
+  color: #f5f3ef;
+  padding: 10px 20px;
+  border-radius: 40px;
+  transition: 0.6s;
+}
+
+.btn-custom:hover {
+  background-color: #ad895b;
+  transform: scale(1.05);
+}
+
+/* Cards */
+.cards-section {
+  margin-top: 80px;
+}
+
+.card-box {
+  padding: 90px 60px;
+  min-height: 300px;
+  justify-content: space-between;
+}
+
+.card-1 {
+  background-color: #6A544D;
+  color: #f5f3ef;
+  transition: 0.6s;
+}
+
+.card-1:hover {
+  background-color: #4B3A36;
+  color: #f5f3ef;
+  transform: scale(1.05);
+}
+
+.card-2 {
+  background-color: #C7B79B;
+  color: #f5f3ef;
+  transition: 0.6s;
+}
+
+.card-2:hover {
+  background-color: #A89072;
+  color: #f5f3ef;
+  transform: scale(1.05);
+}
+
+.card-3 {
+  background-color: #A77C52;
+  color: #f5f3ef;
+  transition: 0.6s;
+}
+
+.card-3:hover {
+  background-color: #8C5E34;
+  color: #f5f3ef;
+  transform: scale(1.05);
+}
+
+.card-box h5 {
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+/* parte do sobre */
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+   padding: 100px 100px;
+}
+
+.sobre-esquerda {
+  width: 55%;   
+  padding: 80px;
+}
+
+.sobre-esquerda h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.icone-sobre {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+.sobre-esquerda p {
+  font-size: 18px;
+}
+
+.fachada-img {
+  width: 350px;
+  border-radius: 16px;
+  transition: 0.6s;
+}
+
+.fachada-img:hover {
+  transform: scale(1.05);
+}
+
+
+/* parte do contato*/
+.contato {
+  background-color: #392420;
+  padding: 80px;
+  color: #f5f3ef;
+  
+}
+
+.contato h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contato input, .contato textarea {
+  display: block;
+  margin: 18px auto;
+  padding: 10px;
+  width: 40%;
+  border-radius: 20px;
+  border: none;
+}
+
+.contato button {
+  background-color: #ad895b;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  display: flex;
+  justify-self: center;
+}
+
+.contato button:hover {
+  background-color: #f5f3ef;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #f5f3ef;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 120px;
+}
+
+footer .info {
+  margin-top: 20px;
+}
+
+.info a{
+    color: #392420;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+  color: #cf915d;
+}
+
+.links a {
+   color: #392420;
+    text-decoration: none;
+}
+.links a:hover {
+    text-decoration: underline;
+  color: #cf915d;
+}
+
+
+/* ===============================
+   RESPONSIVIDADE - MOBILE E TABLET
+   =============================== */
+
+/* ---tablet--- */
+
+@media (max-width: 991px) {
+
+  /* Header */
+  header img {
+    height: 60px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .hero {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .hero-img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  /* Cards */
+  .card-box {
+    padding: 60px 30px;
+  }
+
+  /* parte do sobre */
+  .sobre-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .fachada-img {
+    width: 300px;
+    margin-top: 20px;
+  }
+
+  /* parte do contato */
+  .contato input, 
+  .contato textarea {
+    width: 80%;
+  }
+}
+
+/* --- celular grande --- */
+@media (max-width: 768px) {
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-img {
+    max-width: 90%;
+  }
+
+  /* Cards */
+  .card-box {
+    margin-bottom: 20px;
+  }
+
+  /* parte do contato */
+  .contato {
+    padding: 50px 20px;
+  }
+
+  .contato input, 
+  .contato textarea {
+    width: 90%;
+  }
+
+/* footer */
+  footer {
+    gap: 10px;
+  }
+}
+
+/* --- celular pequeno --- */
+@media (max-width: 576px) {
+
+  header {
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  .btn-custom {
+    padding: 8px 16px;
+  }
+
+  /* parte do sobre */
+  .icone-sobre {
+    width: 100px;
+  }
+
+  .fachada-img {
+    width: 100%;
+  }
+
+  /* parte do contato */
+  .contato input, 
+  .contato textarea {
+    width: 100%;
+  }
+
+/* footer */
+   footer {
+    gap: 10px;
+  }
+
+  footer img {
+    width: 90px;
+  }
+}
